@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <EditText
+        android:id="@+id/edtNombreEvento"
+        android:hint="Ingrese nombre de evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtUbicacion"
+        android:layout_below="@+id/edtNombreEvento"
+        android:hint="Ingrese Ubicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desde"
+            android:layout_below="@+id/edtUbicacion"
+            android:id="@+id/lbvDesde"/>
+   <EditText
+        android:id="@+id/edtFechaDesde"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/edtUbicacion"/>
+
+
+    <EditText
+        android:id="@+id/edtHoraInicio"
+        android:layout_below="@+id/edtUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/lbvHasta"
+        android:layout_below="@+id/edtHoraInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasta"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbvHasta"
+        android:id="@+id/edtFechaHasta"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edtHoraHasta"
+        android:layout_below="@+id/edtFechaHasta"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtDescripcion"
+        android:hint="Descripcion"
+        android:layout_below="@+id/edtHoraHasta"/>
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_below="@+id/edtDescripcion"
+       />
+    <Button
+        android:layout_alignBottom="@+id/btnguardar"
+        android:layout_alignEnd="@+id/edtDescripcion"
+        android:id="@+id/btncancelar"
+        android:text="Cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+</RelativeLayout>
